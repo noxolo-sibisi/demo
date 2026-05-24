@@ -3,137 +3,127 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Portfolio Website</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                    font-size:20px;
-            }
-
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: black;
-                padding: 20px;
-            }
-
-            nav a {
-                color: black;
-                text-decoration: none;
-                margin-right: 20px;
-            }
-
-            nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-            }
-
-            nav ul li {
-                margin-right: 20px;
-            }
-            .logo{
-              border: black solid 1px;
-              padding: 4px 18px;
-              border-radius: 10px;
-            }
-            .video {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 20px 10px;
-                border: black solid 1px;
-                
-            }
-            .about {
-                padding: 20px;
-                 display: flex;
-                 font-weight: bold;
-                 font-size: 20px;
-                 gap:15px;
-                
-
-            }
-            .image{
-                border: black solid 1px;
-                margin-left: 70px;
-                border-radius:50%;
-                width: 400px;
-                height: 400px;
-            }
-            section {
-                padding: 20px;
-            }
-
-            footer {
-                border: black solid 1px;
-                color: black;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            footer a {
-                color: black;
-                text-decoration: none;
-            }
-            .social-media {
-                display: inline-block;
-                margin: 0 20px; 
-                border:solid black 1px;
-                padding: 5px 10px;
-                border-radius: 15px;
-
-            }
-        </style>
+        
     </head>
     <body>
-        <div>
+        
            <header>
             <nav>
-                <a href="#" class="logo">NS</a> 
+                <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+               </div>
+                 <button class="harmburger"><img src="assets/hamburgerMenu.png" alt=""></button>
+               <div class="links">
+                 <a href="index.html">Home</a>
+                    <a href="aboutMe.html">About me</a>
+                    <a href="#interests">Interests</a>
+                   
+               </div>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About me</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                </ul>
+               <div> <a class="contact  nav-contact-btn" href="contactUs.html" >Contact Us</a></div>
+                
+                
             </nav>
            </header>
 
-           <section class="video">
-            <video src="car service video.mp4" controls width="700px" height="400px"></video>
+            <main>
+                 <section class="video">
+            <video  src="assets/car service video.mp4"  controls width="700px" height="400px"></video>
            </section>
-           <div class="about">
-           <section >
-            <h1>Sibisi Noxolo</h1>
-            <p>I am a software developer focused on building backend systems with Java, Springboot, and websites with HTML, CSS, and JavaScript
+                <section id="home">
+              <h2>Welcome to My Portfolio</h2>
+              <p>Hello, I'm Sibisi Noxolo, a passionate software developer.</p>
 
-🔭 I’m currently honing my skills in Spring Boot by building a personal project - a RESTful API.
+              <img src="assets/myImage.png" alt="My Image" width="500" >
 
-</p>
-           </section>
-
-           <section>
-            <img class="image" src="image.png" alt="" >
-           </section>
-</div>
-           <footer>
-            <a href="#">D1002 Phumekhaya Road Cato Ridge 3680</a>
-   
-            <div>
-            <ul >
-                <li class="social-media"><a href="#">F</a></li>
-                <li class="social-media"><a href="#">T</a></li>
-                <li class="social-media"><a href="#">I</a></li>
-                <li class="social-media"><a href="#">0605353005</a></li> 
-            </ul>
+                </section>
             
-       </div>
-           </footer>
-        </div>
+                <hr>
+               <section id="about">
+                <h2>About Me</h2>
+                <div>
+                <p>I am a software developer focused on building backend systems with Java, Springboot, and websites with HTML, CSS, and JavaScript.</p>
+                <p>🔭 I’m currently honing my skills in Spring Boot by building a personal project - a RESTful API.</p>
+              </div>
+               </section>
+
+               <hr>
+               <section id="interests">
+                <h2>Interests</h2>
+                <div>
+                    <ul>
+                        <li> I enjoy learning about cars and automotive technology.</li>
+                        <li>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and learning about software architecture and design patterns.</li>
+                        <li>When I'm not coding, you can find me hiking, playing video games, or experimenting with new recipes in the kitchen.</li>
+                        <li>
+                        I am also passionate about continuous learning and often attend tech meetups and conferences to stay updated with the latest trends in the software development industry.</li>
+                        </li>
+                    </ul>
+ 
+                </div>
+               
+                </section>
+
+                <hr>
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <div class="contact-wrapper">
+                <form >
+                    <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+                </div>
+                </section>
+
+
+
+            </main>
+         <hr>
+<footer class="footer">
+<div class="footer-container"></div>
+<div class="footer-logo">
+<h3>My Portfolio</h3>
+<p>Keeping you updated with my latest projects</p>
+</div>
+<div class="footer">
+<h4> Quick Links</h4> 
+<div class="footer-links">
+<a href="#home">Home</a> 
+<a href="#about">About</a>
+<a href="#interests">Interests</a> 
+<a href="#contact">Contact</a>
+</div>
+
+
+<div class="footer-socials">
+<h4>Follow Me</h4>
+<div class="social-icons">
+<a href="https://www.twitter.com"> <img src="assets/twitter.png" alt="Twitter"></a>
+<a href="https://www.linkedin.com"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+<a href="https://www.github.com"> <img src="assets/github.png" alt="GitHub"></a>
+<a href="https://www.facebook.com"> <img src="assets/facebook.png" alt="Facebook"></a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</div>
+</footer> 
+          
+       
     </body>
     </html>
